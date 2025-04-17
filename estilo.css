@@ -1,4 +1,3 @@
-
 body,html{
     width: 100vw;
     height: 100%;
@@ -44,8 +43,10 @@ body,html{
   width: 100vw;
  
 }
+
 @media (max-width: 1000px){ 
-    body,html{
+    
+body,html{
     width: 100vw;
     height: 100%;
     overflow-x: hidden;
@@ -54,6 +55,7 @@ body,html{
     justify-content: start;
     background-color:#FF76AA ;
 }
+    
     .contenedor{
     
         width:100vw;
@@ -66,9 +68,6 @@ body,html{
             width: 100vw;
             position:absolute;
            height: 100%;
-    
-           margin-left: auto;
-           margin-right: auto;
             display: flex;
             align-items:center;
     
