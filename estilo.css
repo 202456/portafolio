@@ -61,12 +61,11 @@ body,html{
         background-size: cover
     }
         .lapiz{
-            width: 100vw;
+            width: 24vw;
             height: 100vh;
             display: flex;
             align-items: center;
             position:absolute;
-            
         
     
             animation-name: example;
