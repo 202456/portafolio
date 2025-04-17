@@ -47,8 +47,12 @@ body,html{
 @media (max-width: 1000px){ 
     
 body,html{
-   
+     width: 100vw;
 overflow: hidden;
+      display: flex;
+    position: static;
+    justify-content: start;
+    background-color:#FF76AA ;
 }
     
     .contenedor{
