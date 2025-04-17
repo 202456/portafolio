@@ -1,0 +1,82 @@
+@media (max-width: 1900px){
+body,html{
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    display: flex;
+    position: static;
+    justify-content: start;
+    background-color:#FF76AA ;
+}
+.contenedor{
+    
+    width:100vw;
+    height: 100%;
+    position: static;
+    background: url(part1.png); background-position: center;
+    background-size: cover;
+}
+.lapiz{
+    width: 100vw;
+    position:absolute;
+
+    animation-name: example;
+     animation-duration: 4s;
+     animation-iteration-count: infinite;
+    }
+    @keyframes  example{
+      0%   { left:43vw; top:470px;}
+      50%  { left:85vw; top:470px;}
+      100% { left:43vw; top:470px;}
+    }
+.lapiz img{
+    width: 100px;
+  
+}
+.ondulado{
+
+    position: absolute;
+    top: 700px;
+    right: .5px;
+    
+}
+.ondulado img{
+  width: 100vw;
+ 
+}
+}
+@media (max-width: 1000px){ 
+    .contenedor{
+    
+        width:100vw;
+        height: 100%;
+        position: static;
+        background: url(part1cel.png); background-position: center;
+        background-size: cover
+    }
+        .lapiz{
+            width: 100vw;
+            position:absolute;
+           height: 100%;
+    
+           margin-left: auto;
+           margin-right: auto;
+            display: flex;
+            align-items:center;
+    
+        
+
+            animation-name: example;
+             animation-duration: 4s;
+             animation-iteration-count: infinite;
+            }
+            @keyframes  example{
+              0%   { left:15vw; }
+              50%  { left:85vw; }
+              100% { left:15vw; }
+            }
+        .lapiz img{
+            width: 100px;
+           
+        }
+}
