@@ -47,13 +47,10 @@ body,html{
 @media (max-width: 1000px){ 
     
 body,html{
-    width: 100vw;
+    width: 100vw !important;
     height: 100vh;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
-body {
-    width:100%;
-  }
 
     
     .contenedor{
