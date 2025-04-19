@@ -1,6 +1,7 @@
+
 body,html{
     width: 100vw;
-    height: 100%;
+    height: 600vh;
     overflow-x: hidden;
     display: flex;
     position: static;
@@ -10,7 +11,7 @@ body,html{
 .contenedor{
     
     width:100vw;
-    height: 100%;
+    height: 100vh;
     position: static;
     background: url(part1.png); background-position: center;
     background-size: cover;
@@ -41,9 +42,119 @@ body,html{
 }
 .ondulado img{
   width: 100vw;
+  
  
 }
+.acentos{
+top:935px;
+height: 100vh;
+right: .5px;
+display: flex;
+justify-content: center;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+}
+.movimiento{
+top: 990px;
+display: flex;
+justify-content: end;
+    position: absolute;
 
+   
+    animation-name:blender;
+    animation-timeline: scroll(root block)
+}
+.movimiento img{
+    width: 60%;
+  
+
+}
+.movimiento2{
+    position: absolute;
+    top: 1455px;
+    right: 60px;
+    
+    animation-name: cavalry;
+    animation-timeline: scroll(root block)
+}
+.movimiento2 img{
+    width: 60%;
+  }
+  @keyframes cavalry{
+    0%   { right:-30%; }
+    50%  { right:10%; }
+    100% { right:-30%; }
+  }
+
+@keyframes blender{
+    0%   { left:-30%; }
+    50%  { left:10%; }
+    100% { left:-30%; }
+  }
+
+.acentos video{
+    position: absolute;
+    left: 165px;
+    top: 240px;
+}
+.acentos img{
+    width: 100%;
+    padding: 10%;
+
+   
+}
+.cartas{
+    
+right: .5px;
+   background-color: rgb(255, 255, 255);
+   position: absolute;
+
+padding: 10%;
+
+   top: 1600px;
+   
+
+    --index0: calc(var(--index) - 1); /* 0-based index */
+	--reverse-index: calc(var(--numcards) - var(--index0)); /* reverse index */
+	--reverse-index0: calc(var(--reverse-index) - 1); /* 0-based reverse index */
+}
+@keyframes scale{
+	to {
+		transform:
+			scale(calc(1.1 - calc(0.1 * var(--reverse-index))));
+	}
+}
+   
+#cartas {
+	--numcards: 4;
+	view-timeline-name: --cards-element-scrolls-in-body;
+
+
+}
+
+.carta{
+    
+padding-top: 5%;
+
+position: sticky;
+display: flex;
+justify-content:center;
+top: 0;
+    
+    
+        
+        --start-range: calc(var(--index0) / var(--numcards) * 100%);
+        --end-range: calc((var(--index)) / var(--numcards) * 100%);
+    
+        animation: linear scale forwards;
+        animation-timeline: --cards-element-scrolls-in-body;
+        animation-range: exit-crossing var(--start-range) exit-crossing var(--end-range);
+    }
+
+.carta img{
+    width: 90%;
+}
 @media (max-width: 1000px){ 
     
 body,html{
@@ -61,6 +172,7 @@ body,html{
         position: static;
         background: url(part1cel.png); background-position: center;
         background-size: cover
+
     }
         .lapiz{
             width: 24vw;
@@ -68,6 +180,7 @@ body,html{
             display: flex;
             align-items: center;
             position:absolute;
+            background-color: bisque;
         
     
             animation-name: example;
